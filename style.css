@@ -1,0 +1,314 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  /* outline: 2px solid black; */
+  font-family: "Poppins", Courier, monospace;
+  font-size: clamp(0.5rem, 0.5rem + 1vw, 1.2rem);
+}
+html {
+  --darker-color: #80c7d1;
+  --lighter-color: #abdbe3;
+  --outline-color: #76b5c5;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+body {
+  background: no-repeat url(imgs/javier-miranda-nUsBA0isRyY-unsplash.jpg);
+  background-position: -275px;
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+div.main {
+  background-color: white;
+  width: 60vw;
+  height: 100vh;
+  margin-left: auto;
+  background: radial-gradient(
+    circle at right,
+    #101010 7%,
+    #ff9a5c,
+    #924fba,
+    #9fb9f2 90%,
+    #101010 98%
+  );
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  /* background: radial-gradient(#ff9a5c, #924fba, #101010); */
+  /* opacity: 0.7; */
+}
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+div.form-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: var(--lighter-color); */
+  opacity: 0.8;
+  padding: 15px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+  margin-top: -45px;
+  gap: 20px;
+}
+.form-row {
+  margin-top: 5vh;
+  width: min(400px, 20vw);
+}
+input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+input:focus {
+  outline: 2px solid #101010;
+}
+
+div.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30vh;
+  padding: 40px;
+  /* background-color: var(--darker-color); */
+}
+
+div.left,
+div.right {
+  display: flex;
+  flex-direction: column;
+}
+
+p.sign-up {
+  position: absolute;
+  left: 35px;
+  top: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+button {
+  width: 12rem;
+  padding: 10px;
+  color: white;
+  /* padding-right: 15px; */
+  border-radius: 10px;
+  border: none;
+  background: radial-gradient(
+    circle at right 5%,
+    #101010 5%,
+    #ff9a5c,
+    #924fba,
+    #9fb9f2 19%,
+    #101010 102%
+  );
+}
+button:hover,
+button:focus {
+  outline: 2px solid #9fb9f2;
+  color: white;
+}
+
+p.log-in {
+  margin-top: 25px;
+}
+label {
+  font-size: 0.8rem;
+}
+input:invalid {
+  outline: 2px solid red;
+}
+input:valid:required,
+input:valid:not(:placeholder-shown) {
+  outline: 2px solid green;
+}
+a {
+  color: #9fb9f2;
+}
