@@ -312,3 +312,14 @@ input:valid:not(:placeholder-shown) {
 a {
   color: #9fb9f2;
 }
+p.art {
+  position: absolute;
+  font-size: 0.5rem;
+  color: #ff9a5c;
+  left: 50px;
+  bottom: 5px;
+}
+a.art,
+span {
+  font-size: 0.6rem;
+}
